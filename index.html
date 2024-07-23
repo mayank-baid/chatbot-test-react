@@ -4,18 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      .responsive-iframe {
+        max-width: 100%;
+        height: 600px;
+        width: 100%;
+        border: none;
+      }
+      @media (min-width: 768px) {
+        .responsive-iframe {
+          width: 600px;
+        }
+      }
+      @media (min-width: 1024px) {
+        .responsive-iframe {
+          width: 400px;
+        }
+      }
+    </style>
   </head>
   <body>
-    <script
-      async
-      type="module"
-      src="https://interfaces.zapier.com/assets/web-components/zapier-interfaces/zapier-interfaces.esm.js"
-    ></script>
-    <zapier-interfaces-chatbot-embed
-      is-popup="false"
-      chatbot-id="clydyeiqj00e2sj6wqhtz2upl"
-      height="600px"
-      width="400px"
-    ></zapier-interfaces-chatbot-embed>
+    <iframe
+      src="https://interfaces.zapier.com/embed/chatbot/clydyeiqj00e2sj6wqhtz2upl"
+      class="responsive-iframe"
+      allow="clipboard-write *"
+    ></iframe>
   </body>
 </html>
