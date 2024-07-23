@@ -1,0 +1,20 @@
+.popupContent {
+  width: 35vw;
+  height: 80vh;
+  max-height: 40rem;
+  max-width: 30rem;
+
+  @media (max-width: 768px) {
+    width: 50vw;
+    height: 70vh;
+  }
+
+  @media (max-width: 480px) {
+    width: 80vw;
+    height: 70vh;
+  }
+}
+
+.popper {
+  z-index: 10;
+}
